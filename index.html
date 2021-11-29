@@ -42,8 +42,8 @@
             <!-- list container -->
             <div class="container list">
                 <ul>
-                    <li>
-                        <span>Lorem ipsum dolor sit amet.</span>
+                    <li v-for="todo in toDoList">
+                        <span :class="{done : todo.done}">{{todo.text}}</span>
                         <i class="fas fa-times"></i>
                     </li>
                 </ul>
