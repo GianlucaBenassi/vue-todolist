@@ -35,10 +35,49 @@ header h1 {
 /* ***** main ***** */
 
 main .container.add {
-    text-align: center;
     background-color: #e0e4cc;
+
+    display: flex;
 }
 
 main .container.list {
     background-color: #f38630;
+}
+
+
+#to-do-text {
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 20px;
+
+    flex-grow: 1;
+}
+
+main .add button {
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all .5s;
+}
+
+main .add button:hover {
+    cursor: pointer;
+    background-color: #dbdbdb;
+}
+
+
+main .list ul {
+    list-style: none;
+}
+
+main .list li {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+main .list li:not(:last-child) {
+    border-bottom: 1px solid black;
 }
