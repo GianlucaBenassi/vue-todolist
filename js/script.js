@@ -26,7 +26,7 @@ const app = new Vue({
             }
         ],
         newToDoText: ''
-        
+
     },
 
     methods:{
@@ -47,6 +47,14 @@ const app = new Vue({
                 this.newToDoText = '';
             }
 
+        },
+
+        changeDone: function (index) {
+            if (this.toDoList[index].done) {
+                this.toDoList[index].done = false;
+            } else {
+                this.toDoList[index].done = true;
+            }
         }
     }
 

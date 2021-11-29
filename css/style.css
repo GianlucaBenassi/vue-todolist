@@ -86,6 +86,7 @@ main .list li {
     align-items: center;
 }
 
+main .list li span,
 main .list li i {
     cursor: pointer;
 }

@@ -45,7 +45,7 @@
                 <!-- if array > 0 print the list -->
                 <ul v-if="toDoList.length > 0">
                     <li v-for="(todo, i) in toDoList">
-                        <span :class="{done : todo.done}">{{todo.text}}</span>
+                        <span :class="{done : todo.done}" @click="changeDone(i)">{{todo.text}}</span>
                         <i class="fas fa-times" @click="removeToDo(i)"></i>
                     </li>
                 </ul>
