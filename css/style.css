@@ -10,19 +10,21 @@ body {
 }
 
 .container {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#root {
     width: 80%;
     margin: 0 auto;
 }
 
-
 /* ***** header ***** */
 
-header {
+header .container{
     text-align: center;
     background-color: #a7dbd8;
-    margin: 10px 0;
-    padding: 20px 0;
-    border-radius: 10px;
 }
 
 header h1 {
@@ -31,3 +33,12 @@ header h1 {
 
 
 /* ***** main ***** */
+
+main .container.add {
+    text-align: center;
+    background-color: #e0e4cc;
+}
+
+main .container.list {
+    background-color: #f38630;
+}
