@@ -60,11 +60,11 @@ main .add button {
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px 10px;
+    cursor: pointer;
     transition: all .5s;
 }
 
 main .add button:hover {
-    cursor: pointer;
     background-color: #dbdbdb;
 }
 
@@ -80,6 +80,10 @@ main .list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+main .list li i {
+    cursor: pointer;
 }
 
 main .list li:not(:last-child) {
