@@ -34,7 +34,7 @@
 
             <!-- add container -->
             <div class="container add">
-                <input type="text" name="to-do-text" id="to-do-text" placeholder="Inserisci nuovo ToDo" v-model="newToDoText">
+                <input type="text" name="to-do-text" id="to-do-text" placeholder="Inserisci nuovo ToDo" v-model="newToDoText" @keyup.enter="addToDo()">
                 <button @click="addToDo()">Inserisci</button>
             </div>
             <!-- / add container -->
