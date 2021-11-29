@@ -34,8 +34,8 @@
 
             <!-- add container -->
             <div class="container add">
-                <input type="text" name="to-do-text" id="to-do-text" placeholder="Inserisci nuovo ToDo">
-                <button>Inserisci</button>
+                <input type="text" name="to-do-text" id="to-do-text" placeholder="Inserisci nuovo ToDo" v-model="newToDoText">
+                <button @click="addToDo()">Inserisci</button>
             </div>
             <!-- / add container -->
 
@@ -49,7 +49,7 @@
                         <i class="fas fa-times" @click="removeToDo(i)"></i>
                     </li>
                 </ul>
-                
+
                 <!-- else print this -->
                 <h2 v-else>Non hai attività da fare</h2>
 

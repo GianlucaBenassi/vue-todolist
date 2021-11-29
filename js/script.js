@@ -2,6 +2,7 @@ const app = new Vue({
     el: '#root',
 
     data: {
+
         toDoList: [
             {
                 text: 'Fare la spesa',
@@ -23,12 +24,30 @@ const app = new Vue({
                 text: 'Finire una serie tv',
                 done: false
             }
-        ]
+        ],
+        newToDoText: ''
+        
     },
 
     methods:{
+
         removeToDo: function (index) {
             this.toDoList.splice(index, 1);
+        },
+        
+        addToDo: function () {
+
+            if (this.newToDoText == '') {
+                alert('Inserisci del testo prima di procedere!');
+            } else {
+                this.toDoList.push({
+                    text: this.newToDoText,
+                    done: false
+                });
+                this.newToDoText = '';
+            }
+
         }
     }
+
 });
